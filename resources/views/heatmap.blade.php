@@ -1,28 +1,27 @@
 <!DOCTYPE html>
  <html>
-   <head>
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <!--Import materialize.css-->
-     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-     <!--Let browser know website is optimized for mobile-->
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   </head>
-
    <body>
-     <div class="container">
-       <!-- Page Content goes here -->
-       <div class="row">
-         <div class="col s7 push-s5">
-           <ul class="collection" id="lista"></ul>
-         </div>
-        <div class="col s5 pull-s7">
-          <div id="map-canvas"></div>
-        </div>
+     <head>
+       <ul id="nav-mobile" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
+        <li class="logo"><a id="logo-container" href="/" class="brand-logo">Tapa Buraco
+        <li class="search">
+          <div class="search-wrapper">
+            <input id="search" placeholder="Search"><i class="material-icons">search</i>
+            <div class="search-results"></div>
+          </div>
+        </li>
+        <li class="no-padding">
+          <ul class="collection" id="lista"></ul>
+          </ul>
+        </li>
+      </ul>
+     </head>
+     <main>
+       <div class="container">
+         aa
+         <div id="heatmapContainer"></div>
        </div>
-
-     </div>
+     </main>
      <!--Import jQuery before materialize.js-->
      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
      <!-- Compiled and minified CSS -->
@@ -43,6 +42,7 @@
        }
      </script>
      <script>
+     /**
          // map center
          var myLatlng = new google.maps.LatLng(-1.4292069, -48.433406);
          // map options,
@@ -78,7 +78,7 @@
          };
 
          heatmap.setData(testData);
-
+**/
 
   </script>
   <script>
